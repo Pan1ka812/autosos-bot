@@ -48,8 +48,6 @@ MAP_WEBAPP_URL = os.getenv("MAP_WEBAPP_URL", "https://Pan1ka812.github.io/expres
 
 logging.basicConfig(level=logging.INFO)
 
-logging.info(f"BOT_TOKEN length: {len(BOT_TOKEN)}, starts with: {BOT_TOKEN[:10] if BOT_TOKEN else 'EMPTY'}")
-logging.info(f"ALL ENV KEYS: {list(os.environ.keys())}")
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
