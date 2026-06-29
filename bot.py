@@ -34,8 +34,8 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder, ReplyKeyboardBuilder
 
 # налаштування
 BOT_TOKEN = os.getenv("BOT_TOKEN", "")
-ADMIN_CHAT_ID = int(os.getenv("ADMIN_CHAT_ID", "0"))
-REVIEWS_CHAT_ID = int(os.getenv("REVIEWS_CHAT_ID", "0"))
+ADMIN_CHAT_ID = int(os.getenv("ADMIN_CHAT_ID") or "0")
+REVIEWS_CHAT_ID = int(os.getenv("REVIEWS_CHAT_ID") or "0")
 SUPPORT_PHONE = os.getenv("SUPPORT_PHONE", "")
 DATABASE_URL = os.getenv("DATABASE_URL", "")
 GOOGLE_SPREADSHEET_ID = os.getenv("GOOGLE_SPREADSHEET_ID", "")
