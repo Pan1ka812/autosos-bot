@@ -3031,11 +3031,10 @@ async def profile_support_callback(call: CallbackQuery):
 
     await replace_callback_message(
         call,
-        "📞 <b>Підтримка Express T</b>\n\n"
+        "📞 <b>Підтримка AutoSos</b>\n\n"
         "Зв'яжіться з диспетчером будь-яким зручним способом:\n\n"
-        "📱 <a href=\"tel:333\">333</a>\n"
-        "📱 <a href=\"tel:+380665833333\">(066) 583-33-33</a>  <i>Lifecell</i>\n"
-        "📱 <a href=\"tel:+380965833333\">(096) 583-33-33</a>  <i>Kyivstar</i>",
+        "📱 <a href=\"tel:+380995292222\">099 529 22 22</a>\n"
+        "📱 <a href=\"tel:+380735292222\">073 529 22 22</a>",
         reply_markup=get_profile_keyboard(),
         parse_mode="HTML",
     )
