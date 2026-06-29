@@ -1578,7 +1578,7 @@ async def cmd_start(message: Message, state: FSMContext):
             telegram_username=user.username or "",
         )
 
-    photo_path = BASE_DIR / "welcome.jpg"
+    photo_path = BASE_DIR / "welcome.png"
     caption_text = (
         "<b>Express T</b> — професійні вантажні та автомобільні перевезення по Україні.\n\n"
         "Наша компанія пропонує:\n"
