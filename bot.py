@@ -33,8 +33,8 @@ from aiogram.types import (
 from aiogram.utils.keyboard import InlineKeyboardBuilder, ReplyKeyboardBuilder
 
 # налаштування
-BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
-ADMIN_CHAT_ID = int(os.getenv("ADMIN_CHAT_ID") or "0")
+BOT_TOKEN = (os.getenv("BOT_TOKEN") or os.getenv("BOT_TOKEN ") or "").strip()
+ADMIN_CHAT_ID = int((os.getenv("ADMIN_CHAT_ID") or os.getenv("ADMIN_CHAT_ID ") or "0").strip())
 REVIEWS_CHAT_ID = int(os.getenv("REVIEWS_CHAT_ID") or "0")
 SUPPORT_PHONE = os.getenv("SUPPORT_PHONE", "")
 DATABASE_URL = os.getenv("DATABASE_URL", "")
