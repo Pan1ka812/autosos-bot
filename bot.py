@@ -33,7 +33,7 @@ from aiogram.types import (
 from aiogram.utils.keyboard import InlineKeyboardBuilder, ReplyKeyboardBuilder
 
 # налаштування
-BOT_TOKEN = os.getenv("BOT_TOKEN", "")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
 ADMIN_CHAT_ID = int(os.getenv("ADMIN_CHAT_ID") or "0")
 REVIEWS_CHAT_ID = int(os.getenv("REVIEWS_CHAT_ID") or "0")
 SUPPORT_PHONE = os.getenv("SUPPORT_PHONE", "")
@@ -47,6 +47,8 @@ BANNED_USERS_FILE = BASE_DIR / "banned_users.json"
 MAP_WEBAPP_URL = os.getenv("MAP_WEBAPP_URL", "https://Pan1ka812.github.io/express-t-map/map.html")
 
 logging.basicConfig(level=logging.INFO)
+
+logging.info(f"BOT_TOKEN length: {len(BOT_TOKEN)}, starts with: {BOT_TOKEN[:10] if BOT_TOKEN else 'EMPTY'}")
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
